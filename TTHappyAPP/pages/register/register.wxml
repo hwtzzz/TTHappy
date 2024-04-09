@@ -8,20 +8,25 @@
         <button class="avatar-wrapper" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
             <image class="avatar" src="{{avatarUrl}}"></image>
         </button>
-        <form catchsubmit="formSubmit">
+        <view class="chooseText">点击选择头像</view>
+        <form bindsubmit="formSubmit">
             <view class="row">
                 <view class="text1">昵称：</view>
                 <input type="nickname" class="weui-input" name="nickname" placeholder="请输入昵称" />
             </view>
             <view class="row">
                 <view class="text1">手机号：</view>
-                <input type="text" class="weui-input" placeholder="请输入手机号" />
+                <input type="text" class="weui-input" name="tel" placeholder="请输入手机号" />
             </view>
             <view class="row">
                 <view class="text1">密码：</view>
-                <input type="password" class="weui-input" placeholder="请输入密码" />
+                <input type="password" class="weui-input" name="password" placeholder="请输入密码" />
             </view>
-            <button class="submitBtn" form-type="submit">提交</button>
+            <view class="row">
+                <view class="text1">确认密码：</view>
+                <input type="password" class="weui-input" name="repassword" placeholder="再次输入密码" />
+            </view>
+            <button class="submitBtn" form-type="submit">注册</button>
         </form>
     </view>
 </scroll-view>

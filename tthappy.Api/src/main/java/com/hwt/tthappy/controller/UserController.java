@@ -1,8 +1,10 @@
 package com.hwt.tthappy.controller;
 
 import com.hwt.tthappy.dto.LoginDto;
+import com.hwt.tthappy.dto.RegisterDto;
 import com.hwt.tthappy.entity.User;
 import com.hwt.tthappy.service.UserService;
+import com.hwt.tthappy.utils.UserFriendlyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,8 +31,15 @@ public class UserController {
      * @return 返回登录用户信息
      */
     @PostMapping("/login")
-    public User getUserByTel(@RequestBody LoginDto loginDto) {
+    public User login(@RequestBody LoginDto loginDto) {
         return userService.login(loginDto);
     }
+
+    @PostMapping("/register")
+    public void register(@RequestBody RegisterDto registerDto) {
+        userService.register(registerDto);
+    }
+
+
 
 }

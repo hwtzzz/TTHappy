@@ -1,5 +1,7 @@
 package com.hwt.tthappy.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.hwt.tthappy.config.AppConsts;
 import lombok.AllArgsConstructor;
@@ -22,6 +24,7 @@ import java.util.Date;
 @ToString
 public class User {
 
+    @TableId(value = "id" , type = IdType.AUTO)
     private Integer id;
     /**
      * 昵称

@@ -9,7 +9,7 @@ package com.hwt.tthappy.config;
 public class AppConsts {
 
     //图片上传位置，静态资源文件夹文件存储路径
-    public static final String BASE_PATH = "E:\\images";
+    public static final String BASE_PATH = "E:\\image\\";
 
     //访问路径
     //在浏览器上访问该路径可以看到图片

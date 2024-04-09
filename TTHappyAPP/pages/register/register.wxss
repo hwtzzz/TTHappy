@@ -7,7 +7,13 @@
     margin-bottom: 40px;
     background-color: #fff;
 }
-
+.chooseText{
+    margin-top: -32px;
+    text-align: center;
+    color: rgb(122, 120, 120);
+    font-size: 10px;
+    padding-bottom: 20px;
+}
 .avatar {
     display: block;
     width: 56px;
