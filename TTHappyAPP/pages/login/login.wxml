@@ -1,1 +1,22 @@
 <!--pages/login/login.wxml-->
+<view>
+
+    <head fromFather="登录">
+    </head>
+</view>
+<scroll-view class="scrollarea" scroll-y type="list">
+    <view data-weui-theme="{{theme}}" class="loginBox">
+        <form bindsubmit="formSubmit">
+            <view class="row">
+                <view class="text1">手机号：</view>
+                <input type="text" class="weui-input" name="tel" placeholder="请输入手机号" />
+            </view>
+            <view class="row">
+                <view class="text1">密码：</view>
+                <input type="password" class="weui-input" name="password" placeholder="请输入密码" />
+            </view>
+            <button class="submitBtn" form-type="submit">登录</button>
+        </form>
+        <view class="toRegister" bindtap="toRegister"> 去注册 </view>
+    </view>
+</scroll-view>

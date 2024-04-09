@@ -1,10 +1,59 @@
 // pages/login/login.js
+const request = require('../../api/request')
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        //用户需要提交的数据
+        form: {
+            tel: "", // 手机号
+            password: ""
+        }
+    },
+    toRegister: function () {
+        wx.navigateTo({
+            url: "/pages/register/register"
+        })
+    },
+    formSubmit(e) {
+        let tel = e.detail.value.tel
+        let password = e.detail.value.password
+        if (!tel || !password) {
+            wx.showToast({
+                title: '请填写完整',
+                icon: 'error',
+                duration: 1000
+            })
+        } else {
+            //将前端数据放在data里面
+            this.setData({
+                //存入手机号
+                'form.tel': e.detail.value.tel,
+                //存入手机号
+                'form.password': e.detail.value.password
+            })
+            let data = {
+                "tel":this.data.form.tel,
+                "password":this.data.form.password
+            }
+            request.post('/user/login',data).then(res=>{
+                if (res.data.success == true) {
+                    console.log(res.data);
+                    wx.switchTab({
+                        url: '/pages/index/index',
+                    })
+                }else{
+                    console.log(res.data);
+                    wx.showToast({
+                        title: res.data.message,
+                        icon: 'none',
+                        duration: 1000
+                    })
+                }
+              })
+        }
 
     },
 

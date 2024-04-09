@@ -18,7 +18,11 @@ Page({
             password: ""
         }
     },
-
+    toLogin:function() {
+        wx.navigateTo({
+            url: "/pages/login/login"
+        })
+    },
     onChooseAvatar(e) {
         const {
             avatarUrl

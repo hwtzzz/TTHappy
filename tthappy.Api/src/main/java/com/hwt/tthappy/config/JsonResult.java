@@ -34,7 +34,7 @@ public class JsonResult<T> implements Serializable {
     }
 
     public static <T> JsonResult<T> fail(String message) {
-        return new JsonResult<>(false, null, message, 0);
+        return new JsonResult<>(false, null, message, 200);
     }
 
     public static <T> JsonResult<T> fail(String message, int resultCode) {
