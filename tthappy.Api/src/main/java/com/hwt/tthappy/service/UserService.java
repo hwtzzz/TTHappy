@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author hu
@@ -47,5 +48,9 @@ public class UserService {
         user.setNickname(registerDto.getNickname());
         user.setPassword(registerDto.getPassword());
         userDao.insert(user);
+    }
+
+    public List<User> getAllUser() {
+        return userDao.selectList(null);
     }
 }

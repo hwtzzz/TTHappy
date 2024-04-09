@@ -35,24 +35,25 @@ Page({
                 'form.password': e.detail.value.password
             })
             let data = {
-                "tel":this.data.form.tel,
-                "password":this.data.form.password
+                "tel": this.data.form.tel,
+                "password": this.data.form.password
             }
-            request.post('/user/login',data).then(res=>{
+            request.post('/user/login', data).then(res => {
                 if (res.data.success == true) {
-                    console.log(res.data);
+                    // 设置本地存储数据
+                    wx.setStorageSync('user', res.data.result);
+                    //跳转到主页
                     wx.switchTab({
                         url: '/pages/index/index',
                     })
-                }else{
-                    console.log(res.data);
+                } else {
                     wx.showToast({
                         title: res.data.message,
                         icon: 'none',
                         duration: 1000
                     })
                 }
-              })
+            })
         }
 
     },

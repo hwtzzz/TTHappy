@@ -4,12 +4,13 @@ import com.hwt.tthappy.dto.LoginDto;
 import com.hwt.tthappy.dto.RegisterDto;
 import com.hwt.tthappy.entity.User;
 import com.hwt.tthappy.service.UserService;
-import com.hwt.tthappy.utils.UserFriendlyException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * 用户
@@ -35,11 +36,20 @@ public class UserController {
         return userService.login(loginDto);
     }
 
+    /**
+     * 用户注册
+     *
+     * @param registerDto 注册信息
+     */
     @PostMapping("/register")
     public void register(@RequestBody RegisterDto registerDto) {
         userService.register(registerDto);
     }
 
+    @RequestMapping("getAllUser")
+    public List<User> getAllUser(){
+        return userService.getAllUser();
+    }
 
 
 }
