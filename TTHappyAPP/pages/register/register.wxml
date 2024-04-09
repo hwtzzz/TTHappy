@@ -1,5 +1,8 @@
 <!--pages/register/register.wxml-->
-<navigation-bar title="注册" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view>
+    <head fromFather="注册">
+    </head>
+</view>
 <scroll-view class="scrollarea" scroll-y type="list">
     <view data-weui-theme="{{theme}}">
         <button class="avatar-wrapper" open-type="chooseAvatar" bindchooseavatar="onChooseAvatar">
@@ -18,7 +21,7 @@
                 <view class="text1">密码：</view>
                 <input type="password" class="weui-input" placeholder="请输入密码" />
             </view>
-            <button type="primary" style="margin-top: 40rpx;margin-bottom: 20rpx;" form-type="submit">提交</button>
+            <button class="submitBtn" form-type="submit">提交</button>
         </form>
     </view>
 </scroll-view>

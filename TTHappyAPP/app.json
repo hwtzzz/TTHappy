@@ -1,13 +1,17 @@
 {
   "pages": [
+    "pages/register/register",
     "pages/login/login",
-    "pages/index/index",
-    "pages/register/register"
+    "pages/index/index"
+    
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json",
-  "lazyCodeLoading": "requiredComponents"
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents":{
+    "head": "/components/header/header"
+}
 }

@@ -19,7 +19,6 @@ Page({
         this.setData({
             avatarUrl,
         })
-        // app.globalData.userInfo.avatarUrl = avatarUrl
 
     },
     formSubmit(e) {
