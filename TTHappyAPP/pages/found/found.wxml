@@ -1,2 +1,5 @@
 <!--pages/found/found.wxml-->
-<text>pages/found/found.wxml</text>
+<navigation-bar title="发现" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+    发现
+</scroll-view>

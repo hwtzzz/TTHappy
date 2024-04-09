@@ -3,8 +3,8 @@
         "pages/login/login",
         "pages/register/register",
         "pages/index/index",
-        "pages/found/found"
-
+        "pages/found/found",
+        "pages/mine/mine"
     ],
     "window": {
         "navigationBarTextStyle": "black",
@@ -24,9 +24,15 @@
         },
         {
             "pagePath": "pages/found/found",
-            "text": "主页",
+            "text": "发现",
             "iconPath": "/images/found.png",
             "selectedIconPath": "/images/found.png"
+        },
+        {
+            "pagePath": "pages/mine/mine",
+            "text": "我的",
+            "iconPath": "/images/mine.png",
+            "selectedIconPath": "/images/mine.png"
         }]
     }
 }
