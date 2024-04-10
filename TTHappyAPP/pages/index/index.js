@@ -5,11 +5,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        userInfo: {
-            nickname: '',
-            tel: ''
-        },
-        userList:[]
+        nickname: '',
+        tel: '',
+        userList: []
     },
 
     /**
@@ -19,17 +17,18 @@ Page({
         // 获取本地存储数据
         var user = wx.getStorageSync('user');
         this.setData({
-            userInfo : user
+            nickname: user.nickname,
+            tel: user.tel
         })
         // 获取所有用户信息
-        request.post('/user/getAllUser').then(res => {
-            if (res.data.success) {
-                this.setData({
-                    userList : res.data.result
-                })
-                console.log(this.data.userList);
-            }
-        })
+        // request.post('/user/getAllUser').then(res => {
+        //     if (res.data.success) {
+        //         this.setData({
+        //             userList : res.data.result
+        //         })
+        //         console.log(this.data.userList);
+        //     }
+        // })
     },
 
     /**

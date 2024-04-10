@@ -49,8 +49,4 @@ public class UserService {
         user.setPassword(registerDto.getPassword());
         userDao.insert(user);
     }
-
-    public List<User> getAllUser() {
-        return userDao.selectList(null);
-    }
 }

@@ -1,2 +1,39 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view>
+
+    <head fromFather="我的"></head>
+</view>
+<view class="box">
+
+    <!-- 设置列表 -->
+    <view class="setList">
+        <view class="list"  bindtap='creation'>
+            <image src="/images/chuangzuo.png" mode="" />
+            <view class="setTitle">创作中心</view>
+        </view>
+        <view class="list"  bindtap='revise'>
+            <image src="/images/xiugai.png" mode="" />
+            <view class="setTitle">修改密码</view>
+        </view>
+        <view class="list"  bindtap='clean'>
+            <image src="/images/qingchu.png" mode="" />
+            <view class="setTitle">清除缓存</view>
+        </view>
+        <view class="list"  bindtap='update'>
+            <image src="/images/banben.png" mode="" />
+            <view class="setTitle">版本更新</view>
+        </view>
+        <view class="list"  bindtap='about'>
+            <image src="/images/guanyu.png" mode="" />
+            <view class="setTitle">关于我们</view>
+        </view>
+    </view>
+    <!-- 设置列表 end -->
+
+    <!-- 退出登录 -->
+    <view class="tuichuBox" bindtap='goLogin'>
+        退出登录
+    </view>
+    <!-- 退出登录 end -->
+
+</view>

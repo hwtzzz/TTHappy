@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 /**
  * 用户
  *
@@ -44,11 +42,6 @@ public class UserController {
     @PostMapping("/register")
     public void register(@RequestBody RegisterDto registerDto) {
         userService.register(registerDto);
-    }
-
-    @RequestMapping("getAllUser")
-    public List<User> getAllUser(){
-        return userService.getAllUser();
     }
 
 

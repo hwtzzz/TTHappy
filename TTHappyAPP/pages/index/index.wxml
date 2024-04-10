@@ -1,7 +1,8 @@
 <!--index.wxml-->
-<navigation-bar title="主页" back="{{false}}" color="black" background="#2dacf5"></navigation-bar>
+<view>
+    <head fromFather="登录">
+    </head>
+</view>
 <scroll-view class="scrollarea" scroll-y type="list">
-    <view wx:for="{{ userList }}" wx:key="id">
-        {{ item.nickname }} -- {{ item.tel }}
-    </view>
+
 </scroll-view>

@@ -1,5 +1,9 @@
 <!--pages/found/found.wxml-->
-<navigation-bar title="发现" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<view>
+
+<head fromFather="登录">
+</head>
+</view>
 <scroll-view class="scrollarea" scroll-y type="list">
     发现
 </scroll-view>
