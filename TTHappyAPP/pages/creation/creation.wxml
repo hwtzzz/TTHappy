@@ -1,0 +1,5 @@
+<!--pages/creation/creation.wxml-->
+<view>
+
+<head fromFather="创作"></head>
+</view>

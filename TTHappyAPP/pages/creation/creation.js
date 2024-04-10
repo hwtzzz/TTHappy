@@ -1,36 +1,5 @@
-// pages/mine/mine.js
+// pages/creation/creation.js
 Page({
-    creation:function() {
-        // wx.switchTab({
-        //     url: '/pages/creation/creation',
-        // })
-    },
-    revise:function() {
-        wx.switchTab({
-            url: '/pages/index/index',
-        })
-    },
-    clean:function() {
-        wx.showToast({
-            title: "缓存清除成功!",
-            icon: 'none',
-            duration: 1500
-        })
-    },
-    update:function() {
-        wx.showToast({
-            title: "已经是最高版本!",
-            icon: 'none',
-            duration: 1500
-        })
-    },
-    about:function() {
-        wx.showToast({
-            title: "TTHappy超级有趣的兴趣社区",
-            icon: 'none',
-            duration: 2000
-        })
-    },
 
     /**
      * 页面的初始数据

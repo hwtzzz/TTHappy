@@ -3,8 +3,8 @@
         "pages/index/index",
         "pages/login/login",
         "pages/register/register",
-        
         "pages/found/found",
+        "pages/creation/creation",
         "pages/mine/mine"
     ],
     "window": {
@@ -18,22 +18,29 @@
     },
     "tabBar": {
         "list": [{
-            "pagePath": "pages/index/index",
-            "text": "主页",
-            "iconPath": "/images/index.png",
-            "selectedIconPath": "/images/index.png"
-        },
-        {
-            "pagePath": "pages/found/found",
-            "text": "发现",
-            "iconPath": "/images/found.png",
-            "selectedIconPath": "/images/found.png"
-        },
-        {
-            "pagePath": "pages/mine/mine",
-            "text": "我的",
-            "iconPath": "/images/mine.png",
-            "selectedIconPath": "/images/mine.png"
-        }]
+                "pagePath": "pages/index/index",
+                "text": "主页",
+                "iconPath": "/images/index.png",
+                "selectedIconPath": "/images/index.png"
+            },
+            {
+                "pagePath": "pages/found/found",
+                "text": "发现",
+                "iconPath": "/images/found.png",
+                "selectedIconPath": "/images/found.png"
+            },
+            {
+                "pagePath": "pages/creation/creation",
+                "text": "创作",
+                "iconPath": "/images/chuangzuo.png",
+                "selectedIconPath": "/images/chuangzuo.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "/images/mine.png",
+                "selectedIconPath": "/images/mine.png"
+            }
+        ]
     }
 }

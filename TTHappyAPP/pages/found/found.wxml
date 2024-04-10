@@ -1,7 +1,7 @@
 <!--pages/found/found.wxml-->
 <view>
 
-<head fromFather="登录">
+<head fromFather="发现">
 </head>
 </view>
 <scroll-view class="scrollarea" scroll-y type="list">

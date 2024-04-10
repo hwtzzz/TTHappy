@@ -1,6 +1,5 @@
 <!--components/header/header.wxml-->
 <view class="head" style="padding-top: {{paddingTopNum}}px;">
-    <image src="/images/logo.png" mode=""/>
     <view class="title">{{fromFather}}</view>
 </view>
 
