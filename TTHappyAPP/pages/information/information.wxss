@@ -1,2 +1,8 @@
 /* pages/information/information.wxss */
-.bigbox
+.box1{
+width: 90%;
+height: 100rpx;
+margin: auto;
+text-align: center;
+margin-top: 100rpx;
+}

@@ -1,3 +1,2 @@
 <!--pages/information/information.wxml-->
-<view class="bigbox">
-</view>
+<view class="box1">个人信息</view>
