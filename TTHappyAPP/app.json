@@ -5,7 +5,10 @@
         "pages/register/register",
         "pages/found/found",
         "pages/creation/creation",
-        "pages/mine/mine"
+        "pages/mine/mine",
+        "pages/information/information"
+        
+
     ],
     "window": {
         "navigationBarTextStyle": "black",
